@@ -138,7 +138,6 @@ ipcMain.on("check-for-update", (event, msg) => {
 });
 
 function sendStatusToWindow(text) {
-  console.log(text, mainWindow);
   if (mainWindow) {
     mainWindow.webContents.send("message", `${text}`);
   }
