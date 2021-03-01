@@ -1,0 +1,4 @@
+appId: com.blerp.desktop
+publish:
+  provider: github
+  token: 9470f17ea061764ffaa06273c152da66dd31bee4
