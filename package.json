@@ -4,48 +4,20 @@
   "description": "",
   "main": "./src/main.js",
   "scripts": {
-    "start": "electron-forge start",
-    "package": "electron-forge package",
-    "make": "electron-forge make",
-    "build-linux": "electron-forge make --platform linux",
-    "build-windows": "electron-forge make --platform win32",
-    "build-mac": "electron-forge make --platform darwin",
-    "build-zip": "electron-forge make",
-    "pack": "electron-builder --dir",
-    "publish-app": "electron-forge publish",
-    "lint": "echo \"No linting configured\"",
-    "jest": "echo \"No testing configured\""
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-builder build --win --publish never",
+    "deploy": "electron-builder build --win --publish always"
   },
-  "keywords": [],
-  "author": "Blerp",
-  "license": "MIT",
-  "config": {
-    "forge": "./forge.config.js"
-  },
+  "author": "",
+  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "https://github.com/blerp/desktop.git"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.16",
-    "@babel/preset-react": "^7.12.13",
-    "@electron-forge/cli": "^6.0.0-beta.54",
-    "@electron-forge/maker-deb": "^6.0.0-beta.54",
-    "@electron-forge/maker-dmg": "^6.0.0-beta.54",
-    "@electron-forge/maker-rpm": "^6.0.0-beta.54",
-    "@electron-forge/maker-squirrel": "^6.0.0-beta.54",
-    "@electron-forge/maker-wix": "^6.0.0-beta.54",
-    "@electron-forge/maker-zip": "^6.0.0-beta.54",
-    "@electron-forge/plugin-webpack": "^6.0.0-beta.54",
-    "@electron-forge/publisher-github": "^6.0.0-beta.54",
-    "@marshallofsound/webpack-asset-relocator-loader": "^0.5.0",
-    "babel-loader": "^8.2.2",
     "electron": "^11.3.0",
-    "electron-builder": "^22.9.1",
-    "electron-is-dev": "^1.2.0",
-    "electron-reloader": "^1.2.0",
-    "node-loader": "^1.0.2",
-    "style-loader": "^2.0.0"
+    "electron-builder": "^22.9.1"
   },
   "dependencies": {}
 }
